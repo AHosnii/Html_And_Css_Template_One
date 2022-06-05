@@ -308,21 +308,24 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+    .about .about-content .image::after {
+        display: none;
+    }
+}
 @media (max-width: 991px) {
     .about .about-content {
         flex-direction: column;
         text-align: center;
+    }
+    .about .about-content .image {
+        margin: 0 auto 60px ;
     }
 }
 .about .about-content .image {
     width: 250px;
     height: 375px;
     position: relative;
-}
-@media (max-width: 991px) {
-    .about .about-content .image {
-        margin: 0 auto 60px ;
-    }
 }
 .about .about-content .image::before {
     content: '';
